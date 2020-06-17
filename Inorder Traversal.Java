@@ -1,4 +1,17 @@
+/*
 
+LEFT *ROOT* RIGHT
+Since we are not using recursion, we will use the Stack to store the traversal, we need to remember that inorder traversal is, first traverse the left node then root followed by the right node.
+Psuedo code:
+* Create a Stack
+* Push the Root onto Stack until set the root = root.left continue till it hits the NULL.
+* If root is null and Stack is empty Then return, we are done.
+* Else Pop the top Node from the Stack and set it as, root = popped_Node.
+* print the root and go right, root = root.right.
+* Go to step. End If
+
+we have to keep track of the root that’s why we use stack! if we consider each subtree as separate ones it gets easier to understand the traversal and then move to stack
+ */
 
 package com.company;
 
